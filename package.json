@@ -1,0 +1,27 @@
+{
+  "name": "hotelbookingapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "Backend",
+    "Customer-app",
+    "CMS",
+    "common"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MondliWentandane/HotelBookingApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MondliWentandane/HotelBookingApp/issues"
+  },
+  "homepage": "https://github.com/MondliWentandane/HotelBookingApp#readme"
+}

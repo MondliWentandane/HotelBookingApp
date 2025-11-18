@@ -4,7 +4,7 @@ CREATE TABLE Users (
     user_id SERIAL PRIMARY KEY,
     password_hash VARCHAR(255) NOT NULL,
     name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
     phone_number VARCHAR(20) NOT NULL,
     role user_role NOT NULL DEFAULT 'customer',
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
@@ -62,5 +62,6 @@ CREATE TABLE Reviews (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
+
 
 

@@ -1,4 +1,4 @@
 {
-  "buildCommand": "npm install && npm run-script build",
+  "buildCommand": "rm -rf node_modules package-lock.json && npm install && npm run build --if-present || npm run-script build",
   "outputDirectory": "dist"
 }

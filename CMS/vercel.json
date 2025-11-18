@@ -1,4 +1,4 @@
 {
-  "buildCommand": "npm install && node ./node_modules/vite/bin/vite.mjs build",
+  "buildCommand": "npm install && ./node_modules/.bin/vite build || node ./node_modules/vite/bin/vite.mjs build",
   "outputDirectory": "dist"
 }
